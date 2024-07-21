@@ -1,0 +1,50 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="my website or smth"/>
+    <meta name="keywords" content="riviox, rust, pug, website, code, github, flash"/>
+    <meta name="author" content="riviox"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>riviox</title>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-toolkit@8.0.0/lib/js/joypixels.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/avatar.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emoji-toolkit@8.0.0/extras/css/joypixels.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="main"><img id="avatar" src="https://riviox.is-a.dev/assets/avatar.png" alt="avatar"/>
+      <h1>szczota</h1>
+      <div id="info">
+        <txt id="bio">he/him</txt>
+        <txt id="bio">human</txt>
+        <txt id="bio">:crab: rust dev</txt>
+        <txt id="bio">from <span id="pl"><span id="pl1">pol</span><span id="pl2">and  </span></span></txt><br/>
+        <txt id="bio2">He/him</txt>
+      </div>
+      <div id="info2">
+        <div id="container">
+          <txt id="bio">From Laskowo, Greater Poland</txt>
+          <txt id="bio">I like russian music, culture, etc. 
+            <span id="weirdo">Три полоски<br>, три по три полоски<br>Хард басс тусовки,<br> адидас кроссовки</span>
+          </txt>
+          <!-- My dick is small too :moyai: -->
+          <txt id="bio">'tHe gReAtEsT TeChNiCiAn tHaT EvEr livEd' V2</txt>
+          <txt id="bio">Yes, i do watch anime :skull:</txt>
+          <txt id="bio">BDay: 22.07</txt>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function() {
+    	$(".main").each(function() {
+    		var original = $(this).html();
+    		var converted = joypixels.toImage(original);
+    		$(this).html(converted);
+    	});
+    });
+  </script>
+</html>
